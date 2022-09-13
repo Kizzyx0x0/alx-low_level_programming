@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * main - This program prints _putchar
- * 
- * Return: alwyas return 0 
- * 
+ * main - 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char ch[] = "_putchar;";
-    int i;
-
-    for (i = 0; ch[1] != '\0'; i++)
-    {
-        _putchar(ch[i]);        
-    }
+	_putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
     _putchar('\n');
-    return(0);
+	
+    return (0);
 }

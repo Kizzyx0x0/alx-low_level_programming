@@ -24,42 +24,37 @@ void three_dig(int n)
 */
 void print_times_table(int n)
 {
-	int i;
-	int j;
+	int i, j, product;
 
-	if (n <= 15 && n >= 0)
+	if (n >= 0 && n <= 15)
 	{
 		for (i = 0; i <= n; i++)
 		{
 			for (j = 0; j <= n; j++)
 			{
-				int prod = j * i;
-
-				if (j == 0)
+				product = i * j;
+				if (product > 99)
 				{
-					_putchar('0');
-				} else if (prod <= 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + prod);
-				} else if (prod > 99)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar('0' + (prod / 100));
-					_putchar('0' + ((prod / 10) % 10));
-					_putchar('0' + (prod % 10));
-				} else
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + (prod / 10));
-					_putchar('0' + (prod % 10));
+					three_dig(product);
 				}
+				else if (product / 10 > 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(product / 10 + '0');
+					_putchar((product) % 10 + '0');
+				}
+				else if (j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(product % 10 + '0');
+				}
+				else
+					_putchar(product % 10 + '0');
 			}
 			_putchar('\n');
 		}

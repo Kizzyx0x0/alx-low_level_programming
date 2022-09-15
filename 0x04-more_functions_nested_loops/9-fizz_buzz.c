@@ -1,30 +1,31 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0
+ *
+ * Return: a number
  */
 int main(void)
 {
-	int a;
+	int i;
 
-	for (a = 0; a <= 100; a++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (a % 3 == 0 || a % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			if (a % 3 == 0)
+			if (i % 3 == 0)
 			{
 				printf("Fizz");
 			}
-			if (a % 5 == 0)
+			if (i % 5 == 0)
 			{
 				printf("Buzz");
 			}
 		} else
 		{
-			printf("%d", a);
+			printf("%d", i);
 		}
-		if (a != 100)
+		if (i != 100)
 			printf(" ");
 	}
 	printf("\n");

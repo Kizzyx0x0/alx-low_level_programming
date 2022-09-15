@@ -2,7 +2,7 @@
 /**
  * print_triangle - prints a triangle
  * 
- * @size: the sixe of the triangle
+ * @size: the size of the triangle
  */
 void print_triangle(int size)
 {
@@ -13,7 +13,7 @@ void print_triangle(int size)
 	if (size <= 0)
 	{
 		_putchar('\n');
-	}else
+	} else
 	{
 		for (i = 1; i <= size; i++)
 		{
@@ -21,7 +21,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (k = 0; k < 1; k++)
+			for (k = 0; k < i; k++)
 			{
 				_putchar('#');
 			}

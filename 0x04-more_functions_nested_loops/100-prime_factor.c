@@ -2,9 +2,9 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 
+ * Return: Always 0
  */
-int main() 
+int main(void)
 {
 	unsigned int a = 2;
 	unsigned long n = 612852475143;

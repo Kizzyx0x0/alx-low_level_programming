@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: Always 0
  */
-int main ()
+int main(void)
 {
 	int a;
 
@@ -22,7 +22,7 @@ int main ()
 			}
 		} else
 		{
-			printf ("%d", a);
+			printf("%d", a);
 		}
 		if (a != 100)
 		{
@@ -30,5 +30,5 @@ int main ()
 		}
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
